@@ -5,3 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.heading{
+    @apply text-primary text-4xl font-['viga']
+}
+
+.words{
+    @apply text-gray font-light
+}

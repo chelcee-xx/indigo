@@ -1,19 +1,19 @@
 import React from "react";
-
+import { ReactComponent as Cutlery } from "../img/cutlery.svg";
 import men from "../img/men.png";
 
 function About() {
   return (
-    <div className="bg-white shadow">
+    <div className="bg-white shadow-md">
       <div className=" flex items-center">
         <div>
           <img src={men} alt="dine" />
         </div>
-        <div className="w-[60%] px-20 text-justify ">
-          <h2 className="text-primary text-4xl font-['viga'] mt-12 mb-6  text-center">
+        <div className="w-[60%] px-20 text-justify">
+          <h2 className="heading mt-12 mb-6  text-center">
             ABOUT US
           </h2>
-          <p className="text-gray font-light">
+          <p className="words">
             / ND / GO Restaurant & Bar, an American, Asian, and Caribbean fusion
             eatery located in Brooklyn New York , offers an international twist
             on food and culture combining local and foreign perspectives. IN /
@@ -25,6 +25,8 @@ function About() {
             and curating the 'new classic' of dine-in experiences unlike
             anywhere else.
           </p>
+          <div className="flex mt-5 justify-center">
+          <Cutlery /></div>
         </div>
       </div>
     </div>
