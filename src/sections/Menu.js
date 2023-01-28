@@ -1,8 +1,12 @@
+
 import React from "react";
 import { image } from "../img";
-import tomato from "../img/tomato.png"
+import tomato from "../img/tomato.png";
+
 
 export default function Menu() {
+ 
+
   let menu = [
     {
       Name: "Chicken and Waffles",
@@ -57,7 +61,11 @@ export default function Menu() {
 
   return (
     <div className="mb-20  relative">
-<img src={tomato} alt="tomato" className="absolute right-0 -bottom-16 -z-50"/>
+      <img
+        src={tomato}
+        alt="tomato"
+        className="absolute right-0 -bottom-16 -z-50"
+      />
       <div className="flex items-center flex-col">
         <h1 className="heading mt-14">Menu</h1>
         <div className="w-[60%] mt-5 mb-12">
@@ -92,9 +100,7 @@ export default function Menu() {
                   commodo vestibulum ut tellus sed.
                 </p>
               </div>
-              <div className="  font-medium text-primary">
-                ${food.Price}
-              </div>
+              <div className="  font-medium text-primary">${food.Price}</div>
             </div>
           ))}
           {menu.slice(4, 8).map((food, index) => (
@@ -107,9 +113,7 @@ export default function Menu() {
                   commodo vestibulum ut tellus sed.
                 </p>
               </div>
-              <div className="  font-medium text-primary">
-                ${food.Price}
-              </div>
+              <div className="  font-medium text-primary">${food.Price}</div>
             </div>
           ))}
         </div>
