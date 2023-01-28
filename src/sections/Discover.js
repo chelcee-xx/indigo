@@ -1,10 +1,14 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import Pic from "../img/discover.png";
 
 export default function Discover() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="flex">
-      <div className="mr-20 w-[60%] text-justify">
+    <div data-aos="slide-up" className="flex">
+      <div className="mr-20 w-[50%] text-justify">
         <h1 className="heading mb-4">Discover Taste</h1>
         <p className="words">
           Lorem ipsum dolor sit amet consectetur. Est malesuada sociis pretium

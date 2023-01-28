@@ -6,9 +6,9 @@
 @tailwind utilities;
 
 .heading{
-    @apply text-primary text-4xl font-['viga']
+    @apply text-primary text-5xl font-['viga']
 }
 
 .words{
-    @apply text-gray font-light
+    @apply text-gray font-light text-lg leading-6
 }

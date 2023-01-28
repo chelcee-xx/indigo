@@ -22,7 +22,7 @@ export default function Reservations() {
             praesent ac. Integer commodo mattis 6diam et nibh risus. Tellus nunc
             magna sapien praesent platea elementum lacus.{" "}
           </p>
-          <button className="border py-3 text-lg px-5 hover:bg-white hover:text-primary">
+          <button className="border duration-500 ease-in hover:border-primary py-3 text-lg px-5 hover:bg-primary">
             Make Reservation
           </button>
         </div>

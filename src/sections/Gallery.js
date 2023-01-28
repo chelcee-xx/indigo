@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import rest from "../img/restaurant.png";
 import painting from "../img/painting.png";
 import table from "../img/table.png";
 import dish from "../img/dish.png";
+import Aos from "aos";
 
 export default function Gallery() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="px-20">
+    <div data-aos="slide-up" className="px-20">
       <div className="flex justify-center items-center flex-col">
-        <h1 className="heading mt-14">Our Gallery</h1>
+        <h1 className="heading mt-14 tracking-wider">Our Gallery</h1>
         <div className="w-[60%] mt-5 mb-12">
           <p className="text-gray text-center">
             Lorem ipsum dolor sit amet consectetur. Arcu donec justo augue

@@ -1,10 +1,15 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect} from "react";
 import { ReactComponent as Cutlery } from "../img/cutlery.svg";
 import men from "../img/men.png";
 
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+
   return (
-    <div className="bg-white shadow-md">
+    <div  data-aos="slide-up" className="bg-white shadow-md">
       <div className=" flex items-center">
         <div>
           <img src={men} alt="dine" />

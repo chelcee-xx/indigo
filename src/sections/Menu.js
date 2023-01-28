@@ -1,11 +1,15 @@
 
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { image } from "../img";
 import tomato from "../img/tomato.png";
 
 
 export default function Menu() {
- 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
 
   let menu = [
     {
@@ -60,14 +64,14 @@ export default function Menu() {
   ];
 
   return (
-    <div className="mb-20  relative">
+    <div data-aos="slide-up" className="mb-20  relative">
       <img
         src={tomato}
         alt="tomato"
         className="absolute right-0 -bottom-16 -z-50"
       />
       <div className="flex items-center flex-col">
-        <h1 className="heading mt-14">Menu</h1>
+        <h1 className="heading mt-14 tracking-wider">Menu</h1>
         <div className="w-[60%] mt-5 mb-12">
           <p className="text-gray text-center">
             Lorem ipsum dolor sit amet consectetur. Arcu donec justo augue
