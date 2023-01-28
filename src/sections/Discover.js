@@ -5,7 +5,7 @@ export default function Discover() {
   return (
     <div className="flex">
       <div className="mr-20 w-[60%] text-justify">
-        <h1 className="heading">Discover Taste</h1>
+        <h1 className="heading mb-4">Discover Taste</h1>
         <p className="words">
           Lorem ipsum dolor sit amet consectetur. Est malesuada sociis pretium
           nibh. Enim nulla viverra eget diam senectus pellentesque pulvinar urna
@@ -20,6 +20,8 @@ export default function Discover() {
           pellentesque morbi lobortis sagittis. Blandit amet quisque nec
           accumsan egestas. Odio dignissim diam urna in ornare.
         </p>
+        <button className="border py-3 px-5 text-white bg-primary mt-4 hover:bg-white hover:text-primary">Explore Now</button>
+
       </div>
       <div className="">
         <img src={Pic} alt="plates" />
