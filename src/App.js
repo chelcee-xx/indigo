@@ -14,11 +14,11 @@ function App() {
       <div className="relative h-screen font-medium bg-[url('./img/main_bg.png')] bg-cover px-20 pt-12">
         <nav className="flex text-white justify-between items-center">
           <Logo />
-          <div className="flex [&>*]:m-6 cursor-pointer">
-            <a>Home</a>
-            <a>Menu</a>
-            <a>About Us</a>
-            <a>Contact Us</a>
+          <div className="flex [&>*]:m-6 [&>*]:cursor-pointer">
+            <p>Home</p>
+            <p>Menu</p>
+            <p>About Us</p>
+            <p>Contact Us</p>
           </div>
           <div>
             <button className="rounded-full border px-4 py-2">
